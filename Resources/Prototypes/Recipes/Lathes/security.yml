@@ -78,8 +78,8 @@
     Plastic: 200
 
 - type: latheRecipe
-  id: BorgModuleKill
-  result: BorgModuleKill
+  id: BorgModuleSidearm
+  result: BorgModuleSidearm
   category: Weapons
   completetime: 5
   materials:
