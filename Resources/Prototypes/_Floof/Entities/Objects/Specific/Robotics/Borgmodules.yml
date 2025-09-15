@@ -34,7 +34,7 @@
     - Cyborgs
 
 - type: entity
-  id: BorgModuleSidearm
+  id: BorgModuleLASSidearm
   parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
   name: sidearm cyborg module
   description: A deliberately undertuned module developed for the neutralization of threats that do not require alert level escalations.
@@ -43,11 +43,33 @@
     sprite: _Floof/Objects/Specific/Robotics/borgmodule.rsi
     layers:
     - state: security
-    - state: icon-sidearm
+    - state: icon-LASsidearm
   - type: ItemBorgModule
     items:
     - BorgWeaponMakeshiftLaser
-    - CombatKnife
+    - SecurityWhistle
+    - RadioHandheldSecurity
+  - type: GuideHelp
+    guides:
+    - Quadborgs
+    - Cyborgs
+
+- type: entity
+  id: BorgModuleT1Sidearm #T1 Hitscan Laser
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: focused sidearm cyborg module
+  description: An improved, if intentionally undertuned, module developed for the neutralization of threats that do not require alert level escalations.
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: security
+    - state: icon-LASsidearm
+  - type: ItemBorgModule
+    items:
+    - BorgWeaponMakeshiftHitscan
+    - SecurityWhistle
+    - RadioHandheldSecurity
   - type: GuideHelp
     guides:
     - Quadborgs

@@ -78,14 +78,24 @@
     Plastic: 200
 
 - type: latheRecipe
-  id: BorgModuleSidearm
-  result: BorgModuleSidearm
+  id: BorgModuleLASSidearm
+  result: BorgModuleLASSidearm
   category: Weapons
   completetime: 5
   materials:
     Steel: 1500
     Glass: 1000
     Gold: 850
+
+- type: latheRecipe
+  id: BorgModuleT1Sidearm
+  result: BorgModuleT1Sidearm
+  category: Weapons
+  completetime: 5
+  materials:
+    Steel: 1200
+    Glass: 1500
+    Gold: 900
 
 - type: latheRecipe
   id: BorgModuleInvestigation

@@ -53,6 +53,7 @@
   cost: 7500
   recipeUnlocks:
   - WeaponLaserCarbine
+  - BorgModuleT1Sidearm
 
 - type: technology
   id: NonlethalAmmunition

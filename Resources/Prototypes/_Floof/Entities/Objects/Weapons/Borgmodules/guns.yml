@@ -85,8 +85,8 @@
       shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/makeshift.rsi
-  - type: HitscanBatteryAmmoProvider
-    proto: RedLaser
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletBorgSidearmLaser
     fireCost: 62.5
   - type: Battery
     maxCharge: 500
@@ -99,3 +99,20 @@
     maxAngle: 10
     angleIncrease: 2
     angleDecay: 15 # Firing the 8 round magazine will recharge 2 rounds by the end of it. Mag dumping all "10" will cause wild shots.
+
+- type: entity
+  name: focused laser sidearm #t1 energy module for Security Borgs
+  parent: WeaponMakeshiftLaser
+  suffix: Robot
+  id: BorgWeaponMakeshiftHitscan
+  categories: [ HideSpawnMenu ]
+  description: A focused laser lens backed up by an intentionally underpowered configuration.
+  components:
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 30
+  - type: Gun
+    minAngle: 2
+    maxAngle: 10
+    angleIncrease: 2
+    angleDecay: 13 # Slightly better accuracy.

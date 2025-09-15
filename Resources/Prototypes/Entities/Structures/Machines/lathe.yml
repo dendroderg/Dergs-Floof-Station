@@ -862,7 +862,7 @@
       - Zipties
       - ShockCollar
       - BorgModuleStun # Floof (why was this not commented?)
-      - BorgModuleSidearm # Floof (why was this not commented?)
+      - BorgModuleLASSidearm # Floof (why was this not commented?)
       - BorgModuleInvestigation # Floof (why was this not commented?)
       - ClothingOuterShadowkinRestraints # Floof
       # DeltaV - .38 special ammo - Add various .38 special ammo to security techfab
@@ -884,6 +884,7 @@
       - MagazineMagnumLeverRifleEmpty # Goobstation
     dynamicRecipes:
       - BolaEnergy
+      - BorgModuleT1Sidearm
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
