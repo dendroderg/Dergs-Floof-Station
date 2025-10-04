@@ -11,13 +11,19 @@
       "name": "security"
     },
     {
-      "name": "icon-Advmeasures"
+      "name": "icon-x-ray"
     },
     {
       "name": "icon-stun"
     },
     {
       "name": "icon-LASsidearm"
+    },
+    {
+      "name": "icon-T1sidearm"
+    },
+    {
+      "name": "icon-LASlongarm"
     },
     {
       "name": "icon-capture"

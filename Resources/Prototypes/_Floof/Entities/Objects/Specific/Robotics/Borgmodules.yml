@@ -36,7 +36,7 @@
 - type: entity
   id: BorgModuleLASSidearm
   parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
-  name: sidearm cyborg module
+  name: laser sidearm cyborg module
   description: A deliberately undertuned module developed for the neutralization of threats that do not require alert level escalations.
   components:
   - type: Sprite
@@ -57,17 +57,38 @@
 - type: entity
   id: BorgModuleT1Sidearm #T1 Hitscan Laser
   parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
-  name: focused sidearm cyborg module
+  name: focused laser sidearm cyborg module
   description: An improved, if intentionally undertuned, module developed for the neutralization of threats that do not require alert level escalations.
   components:
   - type: Sprite
     sprite: _Floof/Objects/Specific/Robotics/borgmodule.rsi
     layers:
     - state: security
-    - state: icon-LASsidearm
+    - state: icon-T1sidearm
   - type: ItemBorgModule
     items:
     - BorgWeaponMakeshiftHitscan
+    - SecurityWhistle
+    - RadioHandheldSecurity
+  - type: GuideHelp
+    guides:
+    - Quadborgs
+    - Cyborgs
+
+- type: entity
+  id: BorgModuleLASLongarm #Red Alert Laser longarm
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: laser longarm cyborg module
+  description: An improved, deadly module developed for the neutralization of threats that require Red Alert status or otherwise extenuating circumstances.
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: security
+    - state: icon-LASlongarm
+  - type: ItemBorgModule
+    items:
+    - BorgWeaponLaserLongarm
     - SecurityWhistle
     - RadioHandheldSecurity
   - type: GuideHelp
@@ -96,18 +117,21 @@
     - Cyborgs
 
 - type: entity
-  id: BorgModuleadvancedmeasures
+  id: BorgModuleXray
   parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
-  name: advanced combat cyborg module
+  name: x-ray cannon cyborg module
+  description: An expertly designed module for the irradiation of instigators. The lethalility of this module limits it to use on Red Alert or other extenuating circumstances.
   components:
   - type: Sprite
     sprite: _Floof/Objects/Specific/Robotics/borgmodule.rsi
     layers:
     - state: security
-    - state: icon-Advmeasures
+    - state: icon-x-ray
   - type: ItemBorgModule
     items:
     - BorgWeaponXrayCannon
+    - SecurityWhistle
+    - RadioHandheldSecurity
   - type: GuideHelp
     guides:
     - Quadborgs

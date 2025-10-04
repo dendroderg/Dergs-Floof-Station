@@ -885,6 +885,8 @@
     dynamicRecipes:
       - BolaEnergy
       - BorgModuleT1Sidearm
+      - BorgModuleLASLongarm
+      - BorgModuleXray
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium

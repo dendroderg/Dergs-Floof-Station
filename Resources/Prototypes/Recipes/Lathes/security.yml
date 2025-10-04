@@ -98,6 +98,16 @@
     Gold: 900
 
 - type: latheRecipe
+  id: BorgModuleLASLongarm
+  result: BorgModuleLASLongarm
+  category: Weapons
+  completetime: 5
+  materials:
+    Steel: 1500
+    Glass: 1300
+    Gold: 1000
+
+- type: latheRecipe
   id: BorgModuleInvestigation
   result: BorgModuleInvestigation
   category: Weapons
@@ -106,6 +116,18 @@
     Steel: 1500
     Glass: 1000
     Gold: 850
+
+- type: latheRecipe
+  id: BorgModuleXray
+  result: BorgModuleXray
+  category: Weapons
+  completetime: 7
+  materials:
+    Steel: 2000
+    Glass: 1200
+    Plastic: 300
+    Gold: 950
+
 
 # - type: latheRecipe
   # id: WeaponEnergyShotgun
